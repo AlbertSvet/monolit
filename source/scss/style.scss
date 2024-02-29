@@ -1,0 +1,57 @@
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+@import url("https://fonts.googleapis.com/css?family=Bruno+Ace:regular&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "header";
+@import "home";
+@import "range";
+@import "rangeTwo";
+@import "popUp-call";
+@import "popUp-Thanks";
+@import "footer";
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+
+//</Шрифт по умолчанию>==========================================================================================
+
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+	
+  }
+
+.page {
+  padding: 0px 0px 0px 0px;
+	flex: 1 1 auto;
+}
+
+.lock {
+	overflow: hidden;
+}
+//<Адаптив сетка>===========================================================================================================
+
+._container {
+	max-width: 1320px;
+	margin: 0px auto;
+	padding: 0px 60px 0px 60px;
+	@media (max-width: 1130px) {
+		max-width: 950px;
+	}
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}
+//======================
+
